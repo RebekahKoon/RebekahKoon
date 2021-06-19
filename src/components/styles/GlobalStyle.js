@@ -2,17 +2,30 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --purple: #570EF1;
-    --darkPurple: #311C87;
-    --darkerPurple: #191C3C;
-    --lightPurple: #AEB7D0;
-    --lightGray: #D2D0C9;
-    --lightGrey: #D2D0C9;
-    --lighterGray: #F2F2F2;
-    --lighterGrey: #F2F2F2;
-    --lightBlue: #EEF2FF;
     --black: #000000;
     --white: #ffffff;
+    --lightGray: #D1D7E0;
+    --lightGrey: #D1D7E0;
+    
+    /* --darkPurple: #2A1B3D;
+    --darkBlue: #161B40;
+    --charcoal: #2D283E;
+    --purple: #802BB1;
+    --lavendar: #E98074;
+    --pink: #D83F87;
+    --olive: #A4B3B6; */
+
+    /* --mint: #A1C3D1;
+    --lilac: #B39BC8;
+    --offWhite: #F0EBF4;
+    --pink: #F172A1;
+    --hotPink: #E64398; */
+
+    --darkBlue: #24305E;
+    --blue: #374785;
+    --lightBlue: #A8D0E6;
+    --orange: #F76C6C;
+    --yellow: #F8E9A1;
     --maxWidth: 1140px;
   }
   html {
@@ -27,8 +40,8 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
-    font-family: 'PT Sans', sans-serif;
-    background: var(--white);
+    font-family: 'Rubik', sans-serif;
+    background: var(--darkBlue);
     color: var(--black);
     font-size: 16px;
   }
@@ -40,6 +53,7 @@ const GlobalStyle = createGlobalStyle`
   h1 {
     font-size: 2em;
     margin: 0.67em 0;
+    color: var(--black);
   }
 
   hr {
@@ -57,9 +71,6 @@ const GlobalStyle = createGlobalStyle`
     background-color: transparent;
     text-decoration: none;
     color: var(--white);
-    :hover {
-      text-decoration: underline;
-    }
   }
 
   abbr[title] {
