@@ -22,6 +22,7 @@ const GlobalStyle = createGlobalStyle`
     --hotPink: #E64398; */
 
     --darkBlue: #24305E;
+    --darkerBlue: #161B40;
     --blue: #374785;
     --lightBlue: #A8D0E6;
     --orange: #F76C6C;
@@ -41,7 +42,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: 'Rubik', sans-serif;
-    background: var(--darkBlue);
+    background: var(--white);
     color: var(--black);
     font-size: 16px;
   }

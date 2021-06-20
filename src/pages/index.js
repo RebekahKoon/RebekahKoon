@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 import Layout from '../components/Layout'
 import { MainContentContainer } from '../components/styles'
+import { HeaderContainer } from '../components/styles'
 
 const AboutContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-bottom: 20rem;
+  margin-bottom: 15rem;
 `
 
 const DescriptionContainer = styled.section`
@@ -14,7 +15,6 @@ const DescriptionContainer = styled.section`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  border-bottom-left-radius: 50%;
 
   h1 {
     color: var(--orange);
@@ -36,33 +36,48 @@ const ImageContainer = styled.section`
   align-items: center;
 
   img {
-    box-shadow: 25px 25px 0px 5px var(--yellow);
+    border-radius: 50%;
+    box-shadow: 1.5rem 0 var(--yellow);
     margin-left: 5em;
   }
 `
 
-// const Test = styled.div`
-//   background-color: var(--white);
-// `
+const TopTriangle = styled.div`
+  width: 100vw;
+  height: 0;
+  border-top: 6.25rem solid var(--darkBlue);
+  border-left: 100vw solid transparent;
+`
+
+const Test = styled.div`
+  width: 100%;
+  background-color: var(--white);
+  padding-bottom: 2.5rem;
+`
 
 const Index = () => (
   <Layout>
+    <HeaderContainer>
+      <MainContentContainer>
+        <AboutContainer>
+          <DescriptionContainer>
+            <h1>Hi, I'm Rebekah</h1>
+            <p>
+              I'm a full-stack developer located in Oregon. As a recent graduate, I'm currently
+              looking for opportunities to broaden my horizons and help make the lives of others
+              easier.
+            </p>
+          </DescriptionContainer>
+          <ImageContainer>
+            <img src="/rebekah.png" style={{ width: '80%' }} />
+          </ImageContainer>
+        </AboutContainer>
+      </MainContentContainer>
+    </HeaderContainer>
+    <TopTriangle />
     <MainContentContainer>
-      <AboutContainer>
-        <DescriptionContainer>
-          <h1>Hi, I'm Rebekah</h1>
-          <p>
-            I'm a full-stack developer located in Oregon. As a recent graduate, I'm currently
-            looking for opportunities to broaden my horizons and help make the lives of others
-            easier.
-          </p>
-        </DescriptionContainer>
-        <ImageContainer>
-          <img src="/Placeholder.png" style={{ width: '80%' }} />
-        </ImageContainer>
-      </AboutContainer>
+      <Test> hi </Test>
     </MainContentContainer>
-    {/* <Test> hi </Test> */}
   </Layout>
 )
 
