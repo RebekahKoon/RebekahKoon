@@ -38,9 +38,9 @@ export const FooterLink = styled.a`
   letter-spacing: 0.125rem;
   padding: 1.25rem 0rem;
   margin: 0rem 1.25rem;
-  display: inline-block;
   position: relative;
   opacity: 0.75;
+  display: inline-block;
 
   :hover {
     opacity: 1;
@@ -86,12 +86,13 @@ export const TopTriangle = styled.div`
 
 export const FooterColumn = styled.section`
   width: 30%;
+  flex-direction: column;
   color: var(--lightGray);
 `
 
 export const ContactButton = styled(ButtonBorder)`
-  width: 50%;
-  padding: 1rem 0;
+  width: 12.5rem;
+  padding: 1rem 2rem;
   font-size: 1.5rem;
   border-radius: 3rem;
   border: 3px solid var(--blue);

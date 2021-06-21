@@ -9,6 +9,8 @@ const GlobalStyle = createGlobalStyle`
     --white: #ffffff;
     --lightGray: #D1D7E0;
     --lightGrey: #D1D7E0;
+    --gray: #afb6bf;
+    --lightGray: #afb6bf;
     
     /* --darkPurple: #2A1B3D;
     --darkBlue: #161B40;
@@ -60,10 +62,18 @@ const GlobalStyle = createGlobalStyle`
     color: var(--black);
   }
 
+  h2 {
+    font-size: 3rem;
+    line-height: 1rem;
+    color: var(--gray)
+  }
+
   hr {
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible;
+    display: flex;
+    width: 100%;
+    margin-top: 2.5rem;
+    margin: 1rem 0rem 3rem 0rem;
+    border: 1px solid var(--lightGray);
   }
 
   pre {
