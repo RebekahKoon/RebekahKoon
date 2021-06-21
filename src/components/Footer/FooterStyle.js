@@ -4,7 +4,6 @@ import { ButtonBorder } from '../Button'
 export const FooterContainer = styled.div`
   width: 100%;
   padding: 11rem 0;
-  align-items: center;
   justify-content: center;
   background: var(--darkerBlue);
   display: flex;
@@ -62,6 +61,13 @@ export const FooterLink = styled.a`
     bottom: 10px;
     opacity: 1;
   }
+
+  .fa-linkedin,
+  .fa-github-alt,
+  .fa-envelope {
+    color: var(--blue);
+    margin-right: 1rem;
+  }
 `
 
 export const BottomTriangle = styled.div`
@@ -88,6 +94,11 @@ export const ContactButton = styled(ButtonBorder)`
   padding: 1rem 0;
   font-size: 1.5rem;
   border-radius: 3rem;
+  border: 3px solid var(--blue);
+
+  :hover {
+    border: 3px solid var(--blue);
+  }
 `
 
 export default FooterContainer

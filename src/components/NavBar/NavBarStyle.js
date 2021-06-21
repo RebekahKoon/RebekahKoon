@@ -10,7 +10,7 @@ export const NavBody = styled.div`
   align-content: right;
   text-align: right;
   background-color: var(--blue);
-  box-shadow: 0px 4px 15px 3px rgba(0, 0, 0, 0.13);
+  box-shadow: 0px 4px 15px 3px rgba(0, 0, 0, 0.23);
 `
 
 export const NavLink = styled.a`
