@@ -75,6 +75,7 @@ export const BottomTriangle = styled.div`
   height: 0;
   border-bottom: 6.25rem solid var(--darkerBlue);
   border-right: 100vw solid transparent;
+  background-color: var(--lighterGray);
 `
 
 export const TopTriangle = styled.div`

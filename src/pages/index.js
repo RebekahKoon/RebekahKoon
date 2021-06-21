@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import { MainContentContainer } from '../components/styles'
 import { HeaderContainer } from '../components/styles'
+import { ButtonBorder } from '../components/Button'
 
 const SectionContainer = styled.div`
   width: 100%;
@@ -50,16 +51,24 @@ const TopTriangle = styled.div`
   border-left: 100vw solid transparent;
 `
 
+const ProjectTriangle = styled.div`
+  width: 100vw;
+  height: 0;
+  border-top: 6.25rem solid var(--white);
+  border-left: 100vw solid transparent;
+  background-color: var(--lighterGray);
+`
+
 const ProjectImage = styled.section`
-  width: 35%;
+  width: 40%;
   display: flex;
   margin: 0 auto;
   align-content: center;
   align-items: center;
+  justify-content: center;
 
   img {
-    margin-left: 5em;
-    box-shadow: 0px 50px 0px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 50px 0px 16px var(--lighterGray);
     width: 90%;
   }
 `
@@ -69,6 +78,7 @@ const ProjectDescription = styled.section`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  background: none;
 
   h3 {
     color: var(--blue);
@@ -77,9 +87,46 @@ const ProjectDescription = styled.section`
   }
 
   p {
-    color: var(--lightGray);
+    color: var(--gray);
     line-height: 3rem;
+    font-size: 1.5rem;
+  }
+`
+
+const QuoteBackground = styled(HeaderContainer)`
+  background-color: var(--lighterGray);
+`
+
+const QuoteContainer = styled.section`
+  width: 100vw;
+  background-image: url('/quotes.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 15rem 0;
+  font-size: 1.25rem;
+
+  p {
+    line-height: 4rem;
     font-size: 1.75rem;
+  }
+`
+
+export const ProjectsButton = styled(ButtonBorder)`
+  width: 12.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 3rem;
+  border: 3px solid var(--blue);
+  color: var(--blue);
+
+  :hover {
+    border: 3px solid var(--blue);
+    color: var(--white);
   }
 `
 
@@ -104,17 +151,35 @@ const Index = () => (
     </HeaderContainer>
     <TopTriangle />
     <MainContentContainer>
-      <h2>Projects</h2>
+      <h2>Sample Project</h2>
       <hr />
       <SectionContainer>
         <ProjectDescription>
           <h3>Adept</h3>
+          <p>
+            A job tracking website that utilizes React on the front-end and GraphQL powered by
+            Apollo Server for our back-end.
+          </p>
+          <ProjectsButton>View More</ProjectsButton>
         </ProjectDescription>
         <ProjectImage>
           <img src="/adept.png" />
         </ProjectImage>
       </SectionContainer>
     </MainContentContainer>
+    <ProjectTriangle />
+    <QuoteBackground>
+      <QuoteContainer>
+        <p>
+          Rebekah is delightful to work with! In addition to her dedication and ability, I have been
+          very impressed by, and appreciative of, her flexibility. She has taken direction with
+          minimal clarification and then started and completed her tasks with very minimal
+          oversight. As tasks arise, the abilities to think for oneself and make good decisions in
+          any setting are essential.
+        </p>
+        --Brenda Brainard, 4J Natives Program
+      </QuoteContainer>
+    </QuoteBackground>
   </Layout>
 )
 

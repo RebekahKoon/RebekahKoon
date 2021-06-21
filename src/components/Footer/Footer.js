@@ -15,7 +15,6 @@ import {
 const Footer = () => {
   return (
     <>
-      <TopTriangle />
       <BottomTriangle />
       <FooterContainer>
         <FooterColumn style={{ marginRight: '9rem' }}>
@@ -26,7 +25,7 @@ const Footer = () => {
         </FooterColumn>
         <FooterColumn style={{ marginLeft: '9rem' }}>
           <FooterLink href="mailto: koonrebekah@gmail.com">
-            <i class="fas fa-envelope fa-lg"></i>koonrebekah@gmail.com
+            <i className="fas fa-envelope fa-lg"></i>koonrebekah@gmail.com
           </FooterLink>
           <FooterLink href="https://github.com/RebekahKoon/">
             <i className="fab fa-github-alt fa-lg"></i>Find Me on GitHub
