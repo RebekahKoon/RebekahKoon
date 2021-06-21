@@ -4,6 +4,8 @@ import { ButtonBorder } from '../Button'
 export const FooterContainer = styled.div`
   width: 100%;
   padding: 11rem 0;
+  align-items: center;
+  align-content: center;
   justify-content: center;
   background: var(--darkerBlue);
   display: flex;
@@ -40,7 +42,7 @@ export const FooterLink = styled.a`
   margin: 0rem 1.25rem;
   position: relative;
   opacity: 0.75;
-  display: inline-block;
+  /* display: inline-block; */
 
   :hover {
     opacity: 1;
@@ -87,6 +89,7 @@ export const TopTriangle = styled.div`
 
 export const FooterColumn = styled.section`
   width: 30%;
+  display: flex;
   flex-direction: column;
   color: var(--lightGray);
 `
