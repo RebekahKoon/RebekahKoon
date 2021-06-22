@@ -3,28 +3,7 @@ import Layout from '../components/Layout'
 import { MainContentContainer } from '../components/styles'
 import { HeaderContainer } from '../components/styles'
 import { TopTriangle } from '../components/styles'
-
-const DescriptionContainer = styled.section`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding-bottom: 5rem;
-  margin: 0 auto;
-
-  h1 {
-    color: var(--orange);
-    font-size: 4.5rem;
-    line-height: 0;
-  }
-
-  p {
-    color: var(--lightGray);
-    line-height: 3rem;
-    font-size: 1.75rem;
-  }
-`
+import { DescriptionContainer } from '../components/styles'
 
 const SectionContainer = styled.section`
   width: 100%;
@@ -133,9 +112,7 @@ const About = () => {
             <h2>Rebekah's Skills</h2>
             <hr />
             <StyledGrid>
-              {/* <div> */}
               <img src="/html.png" />
-              {/* </div> */}
               <img src="/javascript.png" />
               <img src="/react.png" />
               <img src="mysql.png" />

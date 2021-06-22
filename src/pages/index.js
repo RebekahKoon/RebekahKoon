@@ -151,7 +151,9 @@ const Index = () => (
             A job tracking website that utilizes React on the front-end and GraphQL powered by
             Apollo Server for our back-end.
           </p>
-          <ProjectsButton>View More</ProjectsButton>
+          <a href="/projects">
+            <ProjectsButton>View More</ProjectsButton>
+          </a>
         </ProjectDescription>
         <ProjectImage>
           <img src="/adept.png" />

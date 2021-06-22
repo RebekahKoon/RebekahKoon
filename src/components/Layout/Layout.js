@@ -57,14 +57,14 @@ const Wrapper = styled.div`
   }
 `
 
-const Layout = ({ children, isGray = false }) => {
+const Layout = ({ children, isGray = false, showFooter = true }) => {
   return (
     <>
       <GlobalStyle />
       <Meta />
       <NavBar />
       {children}
-      <Footer isGray={isGray} />
+      {showFooter && <Footer isGray={isGray} />}
     </>
   )
 }
