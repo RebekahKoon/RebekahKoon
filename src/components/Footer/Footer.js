@@ -30,7 +30,7 @@ const Footer = ({ isGray }) => {
             <i className="fab fa-github-alt fa-lg"></i>Find Me on GitHub
           </FooterLink>
           <FooterLink href="https://www.linkedin.com/in/rebekah-koon-b01a7214a/">
-            <i className="fab fa-linkedin fa-lg"></i>Find Me on LinkedIn
+            <i className="fab fa-linkedin fa-lg"></i>Connect on LinkedIn
           </FooterLink>
         </FooterColumn>
       </FooterContainer>

@@ -129,9 +129,9 @@ const Index = () => (
           <DescriptionContainer>
             <h1>Hi, I'm Rebekah</h1>
             <p>
-              I'm a full-stack developer located in Oregon. As a recent graduate, I'm currently
-              looking for opportunities to broaden my horizons and help make the lives of others
-              easier.
+              I'm a full-stack developer located in Oregon. As a recent graduate, I would be
+              thrilled to put my skills to use on a team that delivers exceptional projects to the
+              world.
             </p>
           </DescriptionContainer>
           <AboutImageContainer>

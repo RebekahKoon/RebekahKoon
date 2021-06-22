@@ -66,8 +66,7 @@ export const StyledGrid = styled.div`
   img {
     width: 55%;
     transform: scale(1) perspective(1px);
-    transition: all 0.2s ease-in-out;
-    /* background-color: var(--lighterGray); */
+    transition: all 0.3s ease-in-out;
     padding: 1rem;
     border: 1px solid #e0e0e0;
     border-radius: 25%;
@@ -75,7 +74,7 @@ export const StyledGrid = styled.div`
     :hover {
       box-shadow: 5px 5px 24px -7px rgba(0, 0, 0, 0.25);
       transform: scale(1.25) perspective(1px);
-      transition: all 0.2s ease-in-out;
+      transition: all 0.3s ease-in-out;
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
     }
@@ -105,19 +104,25 @@ const About = () => {
       <TopTriangle />
       <MainContentContainer>
         <SectionContainer>
-          <h2>Who is Rebekah?</h2>
+          <h2>Who am I?</h2>
           <hr />
           <p>
-            My name is Rebekah and I'm from Eugene, OR. I originally pursued a career in education
-            but later discovered a passion for programming. After taking some initial classes, I
-            decided to switch careers and enroll at Oregon State University, where I received a
-            bachelor's degree in Computer Science. I am interested in web development, primarily the
-            back-end aspect. I hope to start a career at a company interested in improving the lives
-            of others through technology.
+            My name is Rebekah. I live in Eugene, OR. I'm currently an IT assistant at the
+            University of Oregon, where I work in the biology department. I was formerly a TA for
+            Computer Science classes at Oregon State University, where I assisted in an introductory
+            programming class as well as an introduction to databases class.
           </p>
           <p>
-            In my free time, I enjoy spending time with friends, family, and my dogs. I enjoy
-            playing the piano and traveling to new places.
+            I originally pursued a career in education but later discovered a passion for
+            programming. After taking some initial classes, I decided to change my career path and
+            enroll at Oregon State University, where I received a bachelor's degree in Computer
+            Science. I am interested in web development, primarily the back-end aspect. However, I
+            am always interested in learning new skills! I hope to find a career at a company
+            interested in transforming the lives of others through technology.
+          </p>
+          <p>
+            In my free time, I enjoy hanging out with friends, family, and my dogs. I enjoy playing
+            the piano and traveling to new places.
           </p>
         </SectionContainer>
       </MainContentContainer>
