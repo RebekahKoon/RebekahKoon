@@ -6,16 +6,15 @@ import '@fortawesome/fontawesome-free/js/regular'
 import {
   FooterContainer,
   FooterColumn,
-  TopTriangle,
   BottomTriangle,
   ContactButton,
   FooterLink,
 } from './FooterStyle'
 
-const Footer = () => {
+const Footer = ({ isGray }) => {
   return (
     <>
-      <BottomTriangle />
+      <BottomTriangle style={{ backgroundColor: !isGray && 'white' }} />
       <FooterContainer>
         <FooterColumn style={{ marginRight: '9rem' }}>
           <h2>Let's Talk!</h2>
@@ -27,11 +26,9 @@ const Footer = () => {
           <FooterLink href="mailto: koonrebekah@gmail.com">
             <i className="fas fa-envelope fa-lg"></i>koonrebekah@gmail.com
           </FooterLink>
-          <br />
           <FooterLink href="https://github.com/RebekahKoon/">
             <i className="fab fa-github-alt fa-lg"></i>Find Me on GitHub
           </FooterLink>
-          <br />
           <FooterLink href="https://www.linkedin.com/in/rebekah-koon-b01a7214a/">
             <i className="fab fa-linkedin fa-lg"></i>Find Me on LinkedIn
           </FooterLink>

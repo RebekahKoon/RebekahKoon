@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import { MainContentContainer } from '../components/styles'
 import { HeaderContainer } from '../components/styles'
+import { TopTriangle } from '../components/styles'
 import { ButtonBorder } from '../components/Button'
 
 const SectionContainer = styled.div`
@@ -44,18 +45,8 @@ const AboutImageContainer = styled.section`
   }
 `
 
-const TopTriangle = styled.div`
-  width: 100vw;
-  height: 0;
-  border-top: 6.25rem solid var(--darkBlue);
-  border-left: 100vw solid transparent;
-`
-
-const ProjectTriangle = styled.div`
-  width: 100vw;
-  height: 0;
+const ProjectTriangle = styled(TopTriangle)`
   border-top: 6.25rem solid var(--white);
-  border-left: 100vw solid transparent;
   background-color: var(--lighterGray);
 `
 
@@ -131,7 +122,7 @@ export const ProjectsButton = styled(ButtonBorder)`
 `
 
 const Index = () => (
-  <Layout>
+  <Layout isGray={true}>
     <HeaderContainer>
       <MainContentContainer>
         <SectionContainer>

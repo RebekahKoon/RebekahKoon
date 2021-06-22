@@ -9,6 +9,7 @@ export const FooterContainer = styled.div`
   justify-content: center;
   background: var(--darkerBlue);
   display: flex;
+  flex-direction: row;
   flex-shrink: 1;
   h2 {
     margin: 1.25rem 0;
@@ -42,13 +43,17 @@ export const FooterLink = styled.a`
   margin: 0rem 1.25rem;
   position: relative;
   opacity: 0.75;
+  transition: all 0.2s ease-in-out;
   /* display: inline-block; */
 
   :hover {
     opacity: 1;
+    transition: all 0.2s ease-in-out;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
   }
 
-  ::before {
+  /* ::before {
     transition: 300ms;
     height: 2px;
     content: '';
@@ -62,7 +67,7 @@ export const FooterLink = styled.a`
   :hover::before {
     bottom: 10px;
     opacity: 1;
-  }
+  } */
 
   .fa-linkedin,
   .fa-github-alt,
@@ -88,7 +93,7 @@ export const TopTriangle = styled.div`
 `
 
 export const FooterColumn = styled.section`
-  width: 30%;
+  /* width: 30%; */
   display: flex;
   flex-direction: column;
   color: var(--lightGray);
