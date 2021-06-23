@@ -154,7 +154,7 @@ const Contact = () => {
               type="text"
               name="name"
               placeholder="Name"
-              required="true"
+              required={true}
               onChange={(e) => {
                 setName(e.target.value)
               }}
@@ -163,7 +163,7 @@ const Contact = () => {
               type="email"
               name="email"
               placeholder="Email"
-              required="true"
+              required={true}
               onChange={(e) => {
                 setEmail(e.target.value)
               }}
@@ -174,7 +174,7 @@ const Contact = () => {
             rows="8"
             name="message"
             placeholder="Message"
-            required="true"
+            required={true}
             onChange={(e) => {
               setMessage(e.target.value)
             }}
