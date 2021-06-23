@@ -182,7 +182,6 @@ const Contact = () => {
           )}
         </FormContainer>
       </MainContentContainer>
-      {/* <BottomTriangle /> */}
       <Footer />
     </Layout>
   )

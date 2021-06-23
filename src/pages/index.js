@@ -1,16 +1,14 @@
 import styled from 'styled-components'
 import Layout from '../components/Layout'
-import { MainContentContainer } from '../components/styles'
-import { HeaderContainer } from '../components/styles'
-import { TopTriangle } from '../components/styles'
 import { ButtonBorder } from '../components/Button'
-
-const SectionContainer = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 15rem;
-`
+import {
+  MainContentContainer,
+  HeaderContainer,
+  TopTriangle,
+  SectionContainer,
+  ProjectDescription,
+  ProjectImage,
+} from '../components/styles'
 
 const DescriptionContainer = styled.section`
   width: 50%;
@@ -50,40 +48,6 @@ const ProjectTriangle = styled(TopTriangle)`
   background-color: var(--lighterGray);
 `
 
-const ProjectImage = styled.section`
-  width: 40%;
-  display: flex;
-  margin: 0 auto;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-
-  img {
-    box-shadow: 0px 50px 0px 16px var(--lighterGray);
-    width: 90%;
-  }
-`
-
-const ProjectDescription = styled.section`
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  background: none;
-
-  h3 {
-    color: var(--blue);
-    font-size: 2.5rem;
-    line-height: 0rem;
-  }
-
-  p {
-    color: var(--gray);
-    line-height: 3rem;
-    font-size: 1.5rem;
-  }
-`
-
 const QuoteBackground = styled(HeaderContainer)`
   background-color: var(--lighterGray);
 `
@@ -121,6 +85,10 @@ const ProjectsButton = styled(ButtonBorder)`
   }
 `
 
+const ButtonLink = styled.a`
+  width: 12.5rem;
+`
+
 const Index = () => (
   <Layout isGray={true}>
     <HeaderContainer>
@@ -151,9 +119,9 @@ const Index = () => (
             A job tracking website that utilizes React on the front-end and GraphQL powered by
             Apollo Server for our back-end.
           </p>
-          <a href="/projects">
+          <ButtonLink href="/projects">
             <ProjectsButton>View More</ProjectsButton>
-          </a>
+          </ButtonLink>
         </ProjectDescription>
         <ProjectImage>
           <img src="/adept.png" />
