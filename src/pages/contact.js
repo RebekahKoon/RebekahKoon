@@ -14,7 +14,7 @@ const FormContainer = styled.form`
   display: grid;
   flex-direction: column;
   margin: 0 auto;
-  padding-bottom: 5rem;
+  padding-bottom: 8rem;
   justify-items: center;
 
   h3 {
@@ -72,6 +72,18 @@ const SubmitButton = styled(ButtonBorder)`
     border: 3px solid var(--blue);
     color: var(--white);
   }
+`
+
+export const BottomTriangle = styled.div`
+  width: 100vw;
+  height: 0;
+  border-bottom: 6.25rem solid var(--darkerBlue);
+  border-right: 100vw solid transparent;
+`
+
+const Footer = styled.footer`
+  padding: 1rem 0;
+  background-color: var(--darkerBlue);
 `
 
 const Contact = () => {
@@ -170,6 +182,8 @@ const Contact = () => {
           )}
         </FormContainer>
       </MainContentContainer>
+      {/* <BottomTriangle /> */}
+      <Footer />
     </Layout>
   )
 }
