@@ -121,7 +121,7 @@ const Contact = () => {
 
     setTimeout(function () {
       setIsLoading(false)
-    }, 3000)
+    }, 2000)
 
     setSubmitted(true)
     setName('')
@@ -183,7 +183,7 @@ const Contact = () => {
           {submitted === false ? (
             <SubmitButton type="submit">Submit</SubmitButton>
           ) : isLoading ? (
-            <Loader type="ThreeDots" color="#374785" height={100} width={100} timeout={3000} />
+            <Loader type="ThreeDots" color="#374785" height={100} width={100} timeout={2000} />
           ) : (
             <h3>Submitted!</h3>
           )}
