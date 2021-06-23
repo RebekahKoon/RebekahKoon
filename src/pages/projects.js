@@ -44,7 +44,7 @@ const StyledLink = styled.a`
 const RepoLinks = styled.div`
   display: flex;
   flex-direction: row;
-  padding-top: 3.5rem;
+  padding-top: 3rem;
 `
 
 const ButtonLink = styled.a`
@@ -69,8 +69,9 @@ const Projects = () => {
         <ProjectSection>
           <ProjectDescription>
             <p>
-              A job tracking website that utilizes React/Next.JS on the front-end and GraphQL
-              powered by Apollo Server for our back-end.
+              A job tracking web app that utilizes React/Next.JS on the front-end and GraphQL
+              powered by Apollo Server for our back-end. Offers account creation for both employers
+              and job seekers.
             </p>
             <ButtonLink href="https://adept.vercel.app/">
               <ProjectsButton>Go to Site</ProjectsButton>
@@ -96,8 +97,9 @@ const Projects = () => {
           </ProjectImage>
           <ProjectDescription>
             <p>
-              A CRUD library app, which has a front-end utilizing React/Next.JS with hand-written
-              MySQL queries to access data from our database.
+              A CRUD app for keeping track of library books and events, which has a front-end
+              utilizing React/Next.JS with hand-written MySQL queries to access data from our
+              database.
             </p>
             <ButtonLink href="https://hawkins-library.vercel.app/">
               <ProjectsButton>Go to Site</ProjectsButton>

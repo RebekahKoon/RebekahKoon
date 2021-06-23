@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
     --lightGray: #afb6bf;
     --lighterGray: #f4f4f4;
     
+    /* Other theme */
     /* --darkPurple: #2A1B3D;
     --darkBlue: #161B40;
     --charcoal: #2D283E;
@@ -21,6 +22,7 @@ const GlobalStyle = createGlobalStyle`
     --pink: #D83F87;
     --olive: #A4B3B6; */
 
+    /* Other theme */
     /* --mint: #A1C3D1;
     --lilac: #B39BC8;
     --offWhite: #F0EBF4;
@@ -35,9 +37,10 @@ const GlobalStyle = createGlobalStyle`
     --yellow: #F8E9A1;
     --maxWidth: 1140px;
   }
+
   html {
-    line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
     box-sizing: border-box;
   }
 
