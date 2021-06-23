@@ -107,7 +107,7 @@ const QuoteContainer = styled.section`
   }
 `
 
-export const ProjectsButton = styled(ButtonBorder)`
+const ProjectsButton = styled(ButtonBorder)`
   width: 12.5rem;
   padding: 1rem 2rem;
   font-size: 1.5rem;
