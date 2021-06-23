@@ -31,7 +31,6 @@ const ProjectsButton = styled(ButtonBorder)`
 
 const StyledLink = styled.a`
   color: #8590aa;
-  font-size: 0.875rem;
   padding: 0;
   margin-right: 0.75rem;
   transition: all 0.2s ease-in-out;
@@ -110,9 +109,34 @@ const Projects = () => {
             </RepoLinks>
           </ProjectDescription>
         </ProjectSection>
+        <h2>freeCodeCamp Contributer</h2>
+        <hr />
+        <ProjectSection>
+          <ProjectDescription>
+            <p>
+              Participated in contributing to freeCodeCamp. This involved creating a pull request
+              that was reviewed and approved by other contributers. The contribution added
+              consistency across the JavaScript challenges offered through the website.
+            </p>
+            <ButtonLink href="https://www.freecodecamp.org/">
+              <ProjectsButton>Go to Site</ProjectsButton>
+            </ButtonLink>
+            <RepoLinks>
+              <StyledLink href="https://github.com/RebekahKoon/freeCodeCamp">
+                View repository
+              </StyledLink>
+            </RepoLinks>
+          </ProjectDescription>
+          <ProjectImage>
+            <img src="/freeCodeCamp.png" />
+          </ProjectImage>
+        </ProjectSection>
         <h2>Pet Shelter API</h2>
         <hr />
         <ProjectSection>
+          <ProjectImage>
+            <embed src="/pet_shelter.pdf" type="application/pdf" width="100%" height="500px" />
+          </ProjectImage>
           <ProjectDescription>
             <p>
               REST API created through Node.JS. Users can perform CRUD functionality on API routes
@@ -128,9 +152,6 @@ const Projects = () => {
               </StyledLink>
             </RepoLinks>
           </ProjectDescription>
-          <ProjectImage>
-            <embed src="/pet_shelter.pdf" type="application/pdf" width="100%" height="500px" />
-          </ProjectImage>
         </ProjectSection>
       </MainContentContainer>
     </Layout>
