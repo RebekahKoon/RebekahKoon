@@ -31,8 +31,9 @@ const ProjectsButton = styled(ButtonBorder)`
 
 const StyledLink = styled.a`
   color: #8590aa;
+  font-size: 1.125rem;
   padding: 0;
-  margin-right: 0.75rem;
+  margin-right: 1rem;
   transition: all 0.2s ease-in-out;
 
   :hover {
@@ -44,7 +45,7 @@ const StyledLink = styled.a`
 const RepoLinks = styled.div`
   display: flex;
   flex-direction: row;
-  padding-top: 3rem;
+  padding-top: 2.5rem;
 `
 
 const ButtonLink = styled.a`

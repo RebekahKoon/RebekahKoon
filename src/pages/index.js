@@ -116,8 +116,9 @@ const Index = () => (
         <ProjectDescription>
           <h3>Adept</h3>
           <p>
-            A job tracking website that utilizes React on the front-end and GraphQL powered by
-            Apollo Server for our back-end.
+            A job tracking web app that utilizes React/Next.JS on the front-end and GraphQL powered
+            by Apollo Server for our back-end. Offers account creation for both employers and job
+            seekers.
           </p>
           <ButtonLink href="/projects">
             <ProjectsButton>View More</ProjectsButton>

@@ -11,7 +11,7 @@ export const ProjectImage = styled.section`
   img {
     border: 2px solid var(--lighterGray);
     border-radius: 0.5rem;
-    width: 90%;
+    width: 95%;
   }
 `
 

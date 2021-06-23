@@ -9,6 +9,7 @@ import {
   BottomTriangle,
   ContactButton,
   FooterLink,
+  ButtonLink,
 } from './FooterStyle'
 
 const Footer = ({ isGray }) => {
@@ -19,7 +20,9 @@ const Footer = ({ isGray }) => {
         <FooterColumn style={{ marginRight: '9rem' }}>
           <h2>Let's Talk!</h2>
           <p>Interested in hiring me for a project?</p>
-          <ContactButton>Contact Me</ContactButton>
+          <ButtonLink href="/contact">
+            <ContactButton>Contact Me</ContactButton>
+          </ButtonLink>
           <br />
         </FooterColumn>
         <FooterColumn style={{ marginLeft: '9rem' }}>

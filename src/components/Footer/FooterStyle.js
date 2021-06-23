@@ -111,4 +111,8 @@ export const ContactButton = styled(ButtonBorder)`
   }
 `
 
+export const ButtonLink = styled.a`
+  width: 12.5rem;
+`
+
 export default FooterContainer
