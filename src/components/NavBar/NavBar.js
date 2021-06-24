@@ -1,15 +1,27 @@
+import { useRouter } from 'next/router'
 import { NavBody, NavLink, HomeLink } from './NavBarStyle'
 
 const NavBar = () => {
+  const router = useRouter()
+  console.log(router.pathname)
+
   return (
     <NavBody>
       <div>
-        <HomeLink href="/">Home</HomeLink>
+        <HomeLink href="/" className={router.pathname === '/' ? 'active' : ''}>
+          Home
+        </HomeLink>
       </div>
       <div>
-        <NavLink href="/about">About</NavLink>
-        <NavLink href="/projects">Projects</NavLink>
-        <NavLink href="/contact">Contact</NavLink>
+        <NavLink href="/about" className={router.pathname === '/about' ? 'active' : ''}>
+          About
+        </NavLink>
+        <NavLink href="/projects" className={router.pathname === '/projects' ? 'active' : ''}>
+          Projects
+        </NavLink>
+        <NavLink href="/contact" className={router.pathname === '/contact' ? 'active' : ''}>
+          Contact
+        </NavLink>
       </div>
     </NavBody>
   )

@@ -13,21 +13,21 @@ const GlobalStyle = createGlobalStyle`
     --lightGray: #afb6bf;
     --lighterGray: #f4f4f4;
     
-    /* Other theme */
-    /* --darkPurple: #2A1B3D;
+    /* Purple theme */
+    --darkPurple: #2A1B3D;
     --darkBlue: #161B40;
     --charcoal: #2D283E;
     --purple: #802BB1;
     --lavendar: #E98074;
     --pink: #D83F87;
-    --olive: #A4B3B6; */
+    --olive: #A4B3B6;
 
-    /* Other theme */
-    /* --mint: #A1C3D1;
+    /* Bright theme */
+    --mint: #A1C3D1;
     --lilac: #B39BC8;
     --offWhite: #F0EBF4;
     --pink: #F172A1;
-    --hotPink: #E64398; */
+    --hotPink: #E64398;
 
     --darkBlue: #24305E;
     --darkerBlue: #161B40;
@@ -89,6 +89,11 @@ const GlobalStyle = createGlobalStyle`
     background-color: transparent;
     text-decoration: none;
     color: var(--white);
+  }
+
+  a.active {
+    font-weight: bolder;
+    color: var(--lilac);
   }
 
   abbr[title] {
