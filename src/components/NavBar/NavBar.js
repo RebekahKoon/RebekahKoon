@@ -3,7 +3,6 @@ import { NavBody, NavLink, HomeLink } from './NavBarStyle'
 
 const NavBar = () => {
   const router = useRouter()
-  console.log(router.pathname)
 
   return (
     <NavBody>
