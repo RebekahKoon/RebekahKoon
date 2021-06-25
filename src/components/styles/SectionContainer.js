@@ -5,6 +5,12 @@ export const SectionContainer = styled.div`
   display: flex;
   flex-direction: row;
   margin-bottom: 15rem;
+
+  @media (max-width: 812px) {
+    flex-direction: column;
+    margin-bottom: 5rem;
+    font-size: 0.5rem;
+  }
 `
 
 export default SectionContainer

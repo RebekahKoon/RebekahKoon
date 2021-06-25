@@ -40,6 +40,10 @@ const StyledInput = styled.input`
     border-color: var(--lightGray);
     transition: all 0.2s ease-in-out;
   }
+
+  @media (max-width: 1400px) {
+    width: 100%;
+  }
 `
 
 const StyledTextArea = styled.textarea`

@@ -10,11 +10,22 @@ export const FooterContainer = styled.div`
   background: var(--darkerBlue);
   display: flex;
   flex-direction: row;
+
   flex-shrink: 1;
+
+  @media (max-width: 960px) {
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+
   h2 {
     margin: 1.25rem 0;
     font-size: 2.5rem;
     color: var(--orange);
+
+    @media (max-width: 960px) {
+      font-size: 2rem;
+    }
   }
 
   h3 {
@@ -29,6 +40,10 @@ export const FooterContainer = styled.div`
     color: var(--lightGray);
     line-height: 3rem;
     font-size: 1.5rem;
+
+    @media (max-width: 960px) {
+      font-size: 1rem;
+    }
   }
 `
 
@@ -44,7 +59,13 @@ export const FooterLink = styled.a`
   position: relative;
   opacity: 0.75;
   transition: all 0.2s ease-in-out;
-  /* display: inline-block; */
+
+  @media (max-width: 960px) {
+    padding: 0 auto;
+    margin-left: 0;
+    margin-right: 0rem;
+    font-size: 0.875rem;
+  }
 
   :hover {
     opacity: 1;
@@ -92,11 +113,36 @@ export const TopTriangle = styled.div`
   border-left: 100vw solid transparent;
 `
 
-export const FooterColumn = styled.section`
-  /* width: 30%; */
+export const ColumnLeft = styled.section`
   display: flex;
   flex-direction: column;
   color: var(--lightGray);
+  margin-right: 9rem;
+
+  @media (max-width: 1300px) {
+    margin-right: 4rem;
+  }
+
+  @media (max-width: 960px) {
+    margin-right: 0;
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+  }
+`
+
+export const ColumnRight = styled.section`
+  display: flex;
+  flex-direction: column;
+  color: var(--lightGray);
+  margin-left: 9rem;
+
+  @media (max-width: 1300px) {
+    margin-left: 4rem;
+  }
+
+  @media (max-width: 960px) {
+    margin-left: 0;
+  }
 `
 
 export const ContactButton = styled(ButtonBorder)`

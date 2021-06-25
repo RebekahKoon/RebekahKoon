@@ -18,6 +18,15 @@ const SectionContainer = styled.section`
     color: var(--darkBlue);
     line-height: 3rem;
     font-size: 1.25rem;
+
+    @media (max-width: 960px) {
+      line-height: 2rem;
+    }
+  }
+
+  @media (max-width: 960px) {
+    width: 90%;
+    margin-bottom: 5rem;
   }
 `
 
@@ -57,6 +66,17 @@ export const StyledGrid = styled.div`
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
     }
+
+    @media (max-width: 960px) {
+      width: 60%;
+      padding: 0.5rem;
+    }
+  }
+
+  @media (max-width: 960px) {
+    grid-template-columns: repeat(3, minmax(50px, 300px));
+    gap: 1rem 0rem;
+    padding: 2rem 2rem;
   }
 `
 

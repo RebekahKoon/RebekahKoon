@@ -19,12 +19,27 @@ const DescriptionContainer = styled.section`
   h1 {
     color: var(--orange);
     font-size: 4.5rem;
+
+    @media (max-width: 960px) {
+      font-size: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
   }
 
   p {
     color: var(--lightGray);
     line-height: 3rem;
     font-size: 1.75rem;
+
+    @media (max-width: 960px) {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  @media (max-width: 960px) {
+    margin-bottom: 2.5rem;
+    width: 75%;
   }
 `
 
@@ -40,6 +55,11 @@ const AboutImageContainer = styled.section`
     box-shadow: 1.5rem 0 var(--yellow);
     margin-left: 5em;
     width: 80%;
+
+    @media (max-width: 960px) {
+      margin-left: 0;
+      width: 75%;
+    }
   }
 `
 
@@ -68,6 +88,18 @@ const QuoteContainer = styled.section`
   p {
     line-height: 4rem;
     font-size: 1.75rem;
+
+    @media (max-width: 960px) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  @media (max-width: 960px) {
+    padding: 10rem 0;
+    width: 75%;
+    background-image: none;
+    font-size: 0.875rem;
   }
 `
 
@@ -82,6 +114,12 @@ const ProjectsButton = styled(ButtonBorder)`
   :hover {
     border: 3px solid var(--blue);
     color: var(--white);
+  }
+
+  @media (max-width: 960px) {
+    width: 8rem;
+    font-size: 1.25rem;
+    padding: 1rem 0.5rem;
   }
 `
 

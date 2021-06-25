@@ -64,12 +64,22 @@ const GlobalStyle = createGlobalStyle`
     font-size: 2em;
     margin: 0.67em 0;
     color: var(--black);
+
+    @media (max-width: 960px) {
+      line-height: 3rem;
+    }
   }
 
   h2 {
     font-size: 3rem;
     line-height: 1rem;
-    color: var(--gray)
+    color: var(--gray);
+
+    @media (max-width: 960px) {
+      margin-left: 1rem;
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
   }
 
   hr {

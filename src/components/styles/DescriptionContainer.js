@@ -13,6 +13,10 @@ const DescriptionContainer = styled.section`
     color: var(--orange);
     font-size: 4.5rem;
     line-height: 0;
+
+    @media (max-width: 960px) {
+      font-size: 3rem;
+    }
   }
 
   p {

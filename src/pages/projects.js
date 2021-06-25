@@ -13,6 +13,10 @@ import {
 
 const ProjectSection = styled(SectionContainer)`
   margin-bottom: 10rem;
+
+  @media (max-width: 960px) {
+    margin-bottom: 2.5rem;
+  }
 `
 
 const ProjectsButton = styled(ButtonBorder)`
@@ -27,6 +31,12 @@ const ProjectsButton = styled(ButtonBorder)`
     border: 3px solid var(--blue);
     color: var(--white);
   }
+
+  @media (max-width: 960px) {
+    width: 8rem;
+    font-size: 1.25rem;
+    padding: 1rem 0.5rem;
+  }
 `
 
 const StyledLink = styled.a`
@@ -39,6 +49,10 @@ const StyledLink = styled.a`
   :hover {
     color: var(--blue);
     transition: all 0.2s ease-in-out;
+  }
+
+  @media (max-width: 960px) {
+    font-size: 0.875rem;
   }
 `
 
@@ -58,7 +72,7 @@ const Projects = () => {
       <HeaderContainer>
         <MainContentContainer>
           <DescriptionContainer>
-            <h1>My Projects</h1>
+            <h1>Projects</h1>
             <p>Discover what projects I have been involved in.</p>
           </DescriptionContainer>
         </MainContentContainer>
