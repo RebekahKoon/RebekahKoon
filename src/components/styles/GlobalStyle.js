@@ -54,6 +54,7 @@ const GlobalStyle = createGlobalStyle`
     background: var(--white);
     color: var(--black);
     font-size: 16px;
+    overflow: overlay;
   }
 
   main {
